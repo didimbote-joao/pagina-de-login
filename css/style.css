@@ -1,0 +1,166 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  height: 100vh;
+  font-family: "Titillium Web", sans-serif;
+  color: #1e293b;
+  background: #f8fafc;
+}
+#containerbg {
+  display: flex;
+  flex-direction: inline;
+  
+}
+#container1 {
+  display: flex;
+  flex-direction: column;
+  gap: 114px;
+  margin: 40px 80px 0px 112px;
+}
+#logo {
+  width: 159.497px;
+  height: 54px;
+  flex-shrink: 0;
+  background: url(../assets/logo.svg);
+  border: none;
+}
+#content {
+  display: inline-flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 40px;
+}
+#content-text {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+.title {
+  font-size: 36px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+.text {
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  width: 371px;
+}
+#input {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 32px;
+}
+#group {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 16px;
+}
+#unic {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 8px;
+}
+#unic {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 8px;
+}
+#frame1 {
+  display: flex;
+  width: 384px;
+  padding: 16px 12px;
+  align-items: center;
+  gap: 10px;
+  border-radius: 4px;
+  border: 1px solid var(--Gray-200, #e2e8f0);
+  background: #fff;
+}
+#frame1 p {
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+#frame2 {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  align-self: stretch;
+}
+#frame3 {
+  display: flex;
+  width: 384px;
+  padding: 16px 12px;
+  align-items: center;
+  gap: 10px;
+  border-radius: 4px;
+  border: 1px solid var(--Gray-200, #e2e8f0);
+  background: #fff;
+}
+#frame4 {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex: 1 0 0;
+}
+#enable {
+  width: 20px;
+  height: 20px;
+  background: url(../assets/hide.svg);
+  border: none;
+}
+#botao {
+  display: flex;
+  width: 384px;
+  padding: 16px 24px;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  border-radius: 4px;
+  background: var(--Purple, #7c3aed);
+}
+#botao p {
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  color: #fff;
+}
+#novo {
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+#novo2 {
+  color:  #7c3aed;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  border: none;
+
+}
+#image{
+  /* height: 100%; */
+  display: block;
+}
+#image img{
+  width: 793px;
+height: 685px;
+flex-shrink: 0;
+}
+#palavra{
+  font: normal 700 50px/normal Arial, sans-serif;
+  color: black;
+}
