@@ -5,14 +5,13 @@
 }
 body {
   height: 100vh;
-  font-family: "Titillium Web", sans-serif;
+  /* font-family: "Titillium Web", sans-serif; */
   color: #1e293b;
   background: #f8fafc;
 }
 #containerbg {
   display: flex;
   flex-direction: inline;
-  
 }
 #container1 {
   display: flex;
@@ -39,17 +38,11 @@ body {
   gap: 16px;
 }
 .title {
-  font-size: 36px;
-  font-style: normal;
-  font-weight: 700;
-  line-height: normal;
+  font: normal 700 36px / normal "Titillium Web", sans-serif;
 }
 .text {
-  font-size: 16px;
-  font-style: normal;
-  font-weight: 400;
-  line-height: normal;
   width: 371px;
+  font: normal 400 16px / normal "Titillium Web", sans-serif;
 }
 #input {
   display: flex;
@@ -75,6 +68,9 @@ body {
   align-items: flex-start;
   gap: 8px;
 }
+#unic p {
+  font: normal 700 14px / normal "Titillium Web", sans-serif;
+}
 #frame1 {
   display: flex;
   width: 384px;
@@ -86,16 +82,16 @@ body {
   background: #fff;
 }
 #frame1 p {
-  font-size: 14px;
-  font-style: normal;
-  font-weight: 400;
-  line-height: normal;
+  font: normal 400 14px / normal "Titillium Web", sans-serif;
 }
 #frame2 {
   display: flex;
   justify-content: space-between;
   align-items: flex-start;
   align-self: stretch;
+}
+#frame2 p {
+  font: normal 700 14px / normal "Titillium Web", sans-serif;
 }
 #frame3 {
   display: flex;
@@ -112,6 +108,9 @@ body {
   justify-content: space-between;
   align-items: center;
   flex: 1 0 0;
+}
+#frame4 p {
+  font: normal 400 14px / normal "Titillium Web", sans-serif;
 }
 #enable {
   width: 20px;
@@ -130,37 +129,22 @@ body {
   background: var(--Purple, #7c3aed);
 }
 #botao p {
-  font-size: 16px;
-  font-style: normal;
-  font-weight: 700;
-  line-height: normal;
+  font: normal 700 16px / normal "Titillium Web", sans-serif;
   color: #fff;
 }
 #novo {
-  font-size: 16px;
-  font-style: normal;
-  font-weight: 400;
-  line-height: normal;
+  font: normal 400 16px / normal "Titillium Web", sans-serif;
 }
 #novo2 {
-  color:  #7c3aed;
-  font-size: 14px;
-  font-style: normal;
-  font-weight: 700;
-  line-height: normal;
-  border: none;
-
+  color: #7c3aed;
+  font: normal 700 14px / normal "Titillium Web", sans-serif;
 }
-#image{
+#image {
   /* height: 100%; */
   display: block;
 }
-#image img{
+#image img {
   width: 793px;
-height: 685px;
-flex-shrink: 0;
-}
-#palavra{
-  font: normal 700 50px/normal Arial, sans-serif;
-  color: black;
+  height: 685px;
+  flex-shrink: 0;
 }
