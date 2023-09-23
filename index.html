@@ -17,45 +17,63 @@
     <div id="containerbg">
       <div id="container1">
         <button id="logo"></button>
-        <div id="content">
-          <div id="content-text">
-            <p class="title">Acesse a plataforma</p>
-            <p class="text">
-              Faça login ou registre-se para começar a construir seus projetos
-              ainda hoje.
-            </p>
-          </div>
-          <div id="input">
-            <div id="group">
-              <div id="unic">
-                <p>Email</p>
-                <div id="frame1">
+        <form action="validation.php" method="post">
+          <div id="content">
+            <div id="content-text">
+              <p class="title">Acesse a plataforma</p>
+              <p class="text">
+                Faça login ou registre-se para começar a construir seus projetos
+                ainda hoje.
+              </p>
+            </div>
+            <div id="input">
+              <div id="group">
+                <div id="unic">
+                  <p>Email</p>
+                  <!-- <div id="frame1">
                   <p>Digite seu email</p>
+                </div> -->
+                  <input
+                    type="text"
+                    name="email"
+                    placeholder="didimbote-joao@gmail.com"
+                    id="frame1"
+                  />
                 </div>
-              </div>
-              <div id="unic">
-                <div id="frame2">
-                  <p>Senha</p>
-                <!-- <p>Esqueceu a senha?</p> -->
-                 <a href="" id="novo2">Esqueceu a senha?</a>
-                </div>
-                <div id="frame3">
+                <div id="unic">
+                  <div id="frame2">
+                    <p>Senha</p>
+                    <!-- <p>Esqueceu a senha?</p> -->
+                    <a href="" id="novo2">Esqueceu a senha?</a>
+                  </div>
+                  <!-- <div id="frame3">
                   <div id="frame4">
                     <p>Digite sua senha</p>
                     <button id="enable"></button>
                   </div>
+                </div> -->
+                  <input
+                    type="text"
+                    name="email"
+                    placeholder="Palavra-passe"
+                    id="frame1"
+                  />
+                  <!-- <button id="enable"></button> -->
                 </div>
               </div>
+              <!-- <div id="botao">
+                <p>Entrar</p>
+              </div> -->
+              <input type="submit" name ="submit" class="inputSubmit" value="Entrar" id="botao" >
+              <p id="novo">
+                Ainda não tem uma conta? <a href="" id="novo2">Inscreva-se</a>
+              </p>
             </div>
-            <div id="botao">
-              <p>Entrar</p>
-            </div>
-            <p id="novo">Ainda não tem uma conta? <a href="" id="novo2">Inscreva-se</a> </p>
           </div>
-        </div>
+        </form>
       </div>
       <div id="image">
-        <img src="./assets/Rectangle 2.png" alt="">
+        <img src="./assets/Rectangle 2.png" alt="" />
       </div>
       <script src="./script.js"></script>
     </div>
