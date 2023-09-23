@@ -16,7 +16,7 @@ body {
 #container1 {
   display: flex;
   flex-direction: column;
-  gap: 114px;
+  gap: 54px;
   margin: 40px 80px 0px 112px;
 }
 #logo {
@@ -56,12 +56,7 @@ body {
   align-items: flex-start;
   gap: 16px;
 }
-#unic {
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  gap: 8px;
-}
+
 #unic {
   display: flex;
   flex-direction: column;
@@ -138,13 +133,11 @@ body {
 #novo2 {
   color: #7c3aed;
   font: normal 700 14px / normal "Titillium Web", sans-serif;
+  text-decoration : none; 
 }
-#image {
-  /* height: 100%; */
-  display: block;
-}
+
 #image img {
-  width: 793px;
-  height: 685px;
+  width: 773px;
+  height: 100vh;
   flex-shrink: 0;
 }
