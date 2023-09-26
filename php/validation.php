@@ -16,7 +16,7 @@
       //Se retornar 0, entao o usuario e/ou senha nao existe
       unset($_POST['email']);
       unset($_POST['senha']);
-      header('Location: index.html'); exit;
+      header('Location: ../index.html'); exit;
     }
     else {
       //Usuario existente, salva os dados do usuario
@@ -32,11 +32,14 @@
 
       #Direcionando a pagina segundo o nivel de acesso
       if ($_SESSION['nivel'] == 2) {
-        header('Location: ../pages/admin.html'); exit;
+        header('Location: ../pages/admin.php'); exit;
       }
       else if ($_SESSION['nivel'] == 1) {
-        header('Location: ../pages/usuario.html'); exit;
+        header('Location: ../pages/usuario.php'); exit;
       }
     }
+  }
+  else{
+    header('Location: ../index.html');
   }
 ?>
