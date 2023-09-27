@@ -6,17 +6,9 @@
   
   #Define o nivel de acesso
   $nivel_requerido = 2; 
-  // print_r($_SESSION['nivel']);
   
-  #Verifica a existencia de um ID
-  if (!isset($_SESSION['id'])) {
-    // Destrói a sessão por segurança
-    session_destroy();
-    // Redireciona o visitante de volta pra login
-    header("Location: ../index.html"); exit;
-  }
-  #Caso exista ID, analisa o nivel de acesso
-  else if($_SESSION['nivel'] != $nivel_requerido){
+  #Verifica a existencia de um ID e analisa o nivel de acesso
+  if (!isset($_SESSION['id']) || $_SESSION['nivel'] != $nivel_requerido) {
     // Destrói a sessão por segurança
     session_destroy();
     // Redireciona o visitante de volta pra login
@@ -32,6 +24,7 @@
   <title>Administrador</title>
 </head>
 <body>
-   <a href="#">Sair</a>
+   <a href="../php/logout.php">Sair</a>
+   <p>Hello, <?php echo $_SESSION['nome'];?> - Administrador </p>
 </body>
 </html>
